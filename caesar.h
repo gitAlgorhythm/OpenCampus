@@ -9,6 +9,7 @@ class Question : public QDialog
     Q_OBJECT
 private:
     QLabel      *plainText,
+                *arrow,
                 *result,
                 *process;
     QPushButton *encryptButton,
@@ -21,7 +22,7 @@ private slots:
     void Decrypt();
 
 public:
-    explicit Question(const char *font, QWidget *parent = 0);
+    explicit Question(QWidget *parent = 0);
 };
 
 #endif
