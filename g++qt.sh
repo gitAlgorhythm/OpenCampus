@@ -1,7 +1,6 @@
 #!/bin/sh
 
-sudo apt install make
-export PATH="/opt/Qt/5.5/gcc_64/bin:"$PATH
+export PATH="/opt/Qt/5.5/gcc/bin:"$PATH
 qmake -project
 
 #Qt5 & C++14に対応
